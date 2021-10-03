@@ -69,7 +69,7 @@ export default function Home() {
       <Pagination
         totalPagination={data.countries.length}
         updateList={(control) => _handleUpdatelist(control)}
-        maxVisibleButton={10}
+        maxVisibleButton={5}
       />
     </div>
   );

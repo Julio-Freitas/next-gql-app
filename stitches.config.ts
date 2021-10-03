@@ -14,5 +14,8 @@ export const {styled, getCssText} = createStitches({
             2: '15px',
             3: '17px',
         },
-    }
+    },
+    media: {
+        tablet: '(max-width: 768px)',
+      }
 })

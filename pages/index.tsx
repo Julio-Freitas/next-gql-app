@@ -6,7 +6,7 @@ import QUERY_COUNTRIES from '../graphql/countries/CountriesQuery.gql';
 import Card from '../componets/molecule/card';
 import Pagination from '../componets/molecule/pagination';
 import { InitialPage } from '../componets/molecule/pagination/pagintation';
-import * as Styeld from './styled';
+import * as Styeld from '../styles/styled';
 
 type Countries = {
   countries: Country[];

@@ -7,8 +7,10 @@ export const Pagiantion = styled("div", {
     alignItems: "center",
     marginTop: "8px",
     padding: "10px",
-    background: "#ddd"
-
+    background: "#ddd",
+    '@tablet': {        
+        maxWidth: "100%"
+    }
 });
 
 export const PagiantionNumbers = styled("div", {

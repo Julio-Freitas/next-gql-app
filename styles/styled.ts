@@ -6,4 +6,7 @@ export const CardFlipContainer = styled('article', {
     flexWrap: "wrap",
     gap: "10px",
     justifyContent: "space-between",
+    '@tablet': {        
+        justifyContent: "center",
+    }
 })

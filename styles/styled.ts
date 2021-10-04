@@ -8,5 +8,15 @@ export const CardFlipContainer = styled('article', {
     justifyContent: "space-between",
     '@tablet': {        
         justifyContent: "center",
+    },
+    variants: {
+        Single: {
+            true: {
+                maxWidth: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column"
+            }
+        }
     }
 })

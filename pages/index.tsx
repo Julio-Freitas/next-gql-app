@@ -3,9 +3,12 @@ import { useState } from 'react';
 import { useQuery } from '@apollo/client';
 import { Country } from '../api/types/types';
 import QUERY_COUNTRIES from '../graphql/countries/CountriesQuery.gql';
-import Card from '../componets/molecule/card';
-import Pagination from '../componets/molecule/pagination';
-import { InitialPage } from '../componets/molecule/pagination/pagintation';
+
+import Card from '@/components/molecule/card';
+import Filter from '@/components/molecule/filter';
+
+import Pagination from 'components/molecule/pagination';
+import { InitialPage } from 'components/molecule/pagination/pagination';
 import * as Styeld from '../styles/styled';
 
 type Countries = {
@@ -52,7 +55,9 @@ export default function Home() {
         <title>Countries GraphQL</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <h1>Countries</h1>
+      <Filter />
       <Styeld.CardFlipContainer>
         {data.countries
           .map((country) => (
